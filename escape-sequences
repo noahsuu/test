@@ -1,0 +1,7 @@
+textNew = "Hello \"World\""
+print(textNew)
+print("\n\n\n\n\n\n")
+textCool = "hello\f guys"
+textWow = "hello\b guys"
+print(textCool)
+print(textWow)
