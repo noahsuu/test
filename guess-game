@@ -1,0 +1,36 @@
+import random
+score = 0
+
+whateverPythonsGuessIs = random.randint(1, 10)
+
+def checkAnswer(guess, answer):
+    global score;
+    if int(guess) == whateverPythonsGuessIs:
+        print("correct!!!");
+        score = score + 1;
+    else:
+        print("incorrect answer!");
+
+print("welcome to the noah guessing game !!!!!!");
+guess1 = input("pick a number from 1-10.");
+print("you typed: " + guess1);
+
+print("python guessed:")
+print(random.randint(1, 10))
+checkAnswer(guess1, whateverPythonsGuessIs)
+print("try again!")
+
+guess1 = input("pick a number from 1-10.");
+print("you typed: " + guess1);
+print("python guessed:")
+print(random.randint(1, 10))
+checkAnswer(guess1, whateverPythonsGuessIs)
+print("last round!")
+
+guess1 = input("pick a number from 1-10.");
+print("you typed: " + guess1);
+
+print("python guessed:")
+print(random.randint(1, 10))
+checkAnswer(guess1, whateverPythonsGuessIs)
+print("thank you for playing!")
